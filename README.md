@@ -103,5 +103,11 @@ To learn more about React Native, take a look at the following resources:
 
 ## Project Demo  
 ### ▶️ Native GitHub Video  
-<video src="assets/demo1.mov" controls width="100%"></video>  
-<video src="assets/demo1.mov" controls width="100%"></video>  
+<!-- <video src="assets/demo1.mov" controls width="100%"></video>  
+<video src="assets/demo1.mov" controls width="100%"></video>   -->
+
+
+
+### 🎥 YouTube Link  
+[![Watch Tutorial]()](https://jumpshare.com/s/BX8XfCEXylLp6hjPYVJn)  
+
