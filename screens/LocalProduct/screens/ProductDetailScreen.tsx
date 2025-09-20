@@ -1,5 +1,5 @@
 // screens/ProductDetailScreen.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
 import type { RootStackParamList } from '../types/navigation';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -17,8 +17,14 @@ type Product = {
   description?: string;
 };
 
-const ProductDetailScreen = ({ route }: Props) => {
+const ProductDetailScreen = ({ route, navigation }: Props) => {
   const { product }: { product: Product } = route.params;
+
+  useEffect(() => {
+    navigation.setOptions({
+      title: product.title,
+    });
+  }, [navigation, product.title]);
 
   return (
     <ScrollView contentContainerStyle={productStyles.container}>
